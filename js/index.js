@@ -50,7 +50,7 @@ function displaySection(section) {
       pageElement.style.display = "block";
       setTimeout(()=> {
         pageElement.style[selectedPagePosition[0].position] = "0";
-      },10)
+      },1)
     }
     else {
       const pageElement =  document.getElementById(pages.children[i].id);
