@@ -30,7 +30,6 @@ header nav ul {
   overflow-y: hidden;
   display: none;
   position: relative;
-  right: -1500px;
   transition: 1s;
 }
 .hero {

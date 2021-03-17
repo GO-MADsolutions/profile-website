@@ -2,8 +2,17 @@
   displaySection("home");
 })();
 
-
 function displaySection(section) {
+  var pagePosition = [
+    {
+      page: "home",
+      position: "top"
+    },
+    {
+      page: "about",
+      position: "right"
+    }
+  ]
   const link = document.querySelectorAll(`[data-link-selected]`);
   for(let i = 0 ; i < link.length ; i++) {
     if(link[i].dataset.linkSelected === section) {
@@ -16,17 +25,21 @@ function displaySection(section) {
   }
   const pages = document.getElementById("pages");
   for(let i=0; i< pages.children.length; i++) {
+    const selectedPagePosition = pagePosition.filter((pageItr)=>{
+      return pageItr.page === pages.children[i].id;
+    });
     if(pages.children[i].id === section) {
       const pageElement =  document.getElementById(pages.children[i].id);
+      pageElement.style[selectedPagePosition[0].position] = "-1500px";
       pageElement.style.display = "block";
       setTimeout(()=> {
-        pageElement.style.right = "0";
+        pageElement.style[selectedPagePosition[0].position] = "0";
       },10)
     }
     else {
       const pageElement =  document.getElementById(pages.children[i].id);
+      pageElement.style[selectedPagePosition[0].position] = "-1500px";
       pageElement.style.display = "none";
-      pageElement.style.right = "-1500px";
     }
   }
 }
