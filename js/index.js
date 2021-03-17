@@ -11,7 +11,23 @@ function displaySection(section) {
     {
       page: "about",
       position: "right"
-    }
+    },
+    {
+      page: "skills",
+      position: "left"
+    },
+    {
+      page: "history",
+      position: "bottom"
+    },
+    {
+      page: "projects",
+      position: "top"
+    },
+    {
+      page: "contact",
+      position: "right"
+    },
   ]
   const link = document.querySelectorAll(`[data-link-selected]`);
   for(let i = 0 ; i < link.length ; i++) {
