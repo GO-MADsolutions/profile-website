@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #242020;
+  background-color: #000000;
   color: #ffffff;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -25,9 +25,13 @@ header nav ul {
   cursor: pointer;
   opacity: 0.8;
 }
-#home {
+#home, #about {
   height: 90vh;
   overflow-y: hidden;
+  display: none;
+  position: relative;
+  right: -1500px;
+  transition: 1s;
 }
 .hero {
   width: 100%;
@@ -37,15 +41,14 @@ header nav ul {
 
 .row {
   display: flex;
+  height: 100%;
 }
 .column-4 {
   flex: 30%;
-  max-width: 30%;
   padding: 20px;
 }
 .column-8 {
   flex: 60%;
-  max-width: 60%;
   padding: 20px;
 }
 
@@ -57,7 +60,6 @@ header nav ul {
   align-items: center;
   vertical-align: middle;
   justify-content: center;
-  margin-top: -4rem;
 }
 
 .profile > p {
@@ -69,4 +71,11 @@ header nav ul {
   font-size: 5rem;
   color: #03cc83;
   font-weight: 400;
+}
+
+.svg-holder {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-left: 6rem;
 }

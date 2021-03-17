@@ -11,20 +11,20 @@
     <header>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Skills</li>
-          <li>History</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li onclick="displaySection('home')">Home</li>
+          <li onclick="displaySection('about')">About</li>
+          <li onclick="displaySection('skills')">Skills</li>
+          <li onclick="displaySection('history')">History</li>
+          <li onclick="displaySection('projects')">Projects</li>
+          <li onclick="displaySection('contact')">Contact</li>
           <div class="logo"><h1>LOGO</h1></div>
         </ul>
       </nav>
     </header>
-    <main>
+    <main id="pages">
       <section id="home">
         <div class="row">
-          <div class="coloumn-4">
+          <div class="column-4">
             <div class="hero">
               <img src="./assets/hero.png" alt="" />
             </div>
@@ -38,6 +38,23 @@
           </div>
         </div>
       </section>
+      <section id="about">
+        <div class="row">
+          <div class="column-4">
+            <div class="svg-holder">
+              <img src="./assets/demo.svg" alt="" />
+            </div>
+          </div>
+          <div class="column-8">
+            <div class="profile">
+              <p>Hello I'am</p>
+              <h1>GOUTHAM PALANI</h1>
+              <p>Full Stack Developer</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="./js/index.js"></script>
   </body>
 </html>
