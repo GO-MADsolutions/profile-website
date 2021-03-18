@@ -44,13 +44,26 @@ header nav ul {
   display: flex;
   height: 100%;
 }
+.column-4 ,.column-5 ,.column-6 ,.column-7 ,.column-8 {
+  padding: 20px;
+}
 .column-4 {
   flex: 30%;
-  padding: 20px;
 }
 .column-8 {
   flex: 60%;
-  padding: 20px;
+}
+
+.column-6 {
+  flex: 50%;
+}
+
+.column-5 {
+  flex: 40%;
+}
+
+.column-7 {
+  flex: 60%;
 }
 
 .profile {
@@ -74,13 +87,35 @@ header nav ul {
   color: #03cc83;
   font-weight: 400;
 }
+.about {
+  padding: 20px 20px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.about > p {
+  font-size: 1.5rem;
+  padding: 15px;
+}
 
 .svg-holder {
   height: 100%;
   width: 100%;
   display: flex;
-  margin-left: 6rem;
+  margin-left: 3rem;
 }
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.details > p, .details > a  {
+  line-height: 2;
+  font-size: 20px;
+}
+
 #skills {
   width: 80%;
   height: 90vh;
@@ -103,4 +138,18 @@ header nav ul {
 .highLight {
   color: #4298c3;
   text-shadow: blue;
+}
+
+.details > a  {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.text-theme {
+  color: #03cc83; 
+}
+
+.pointer {
+  cursor: pointer;
 }
