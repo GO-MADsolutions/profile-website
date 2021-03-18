@@ -27,7 +27,9 @@ header nav ul {
   font-weight: 200;
 }
 #home,
-#about {
+#about,
+#skills,
+#history {
   height: 90vh;
   overflow-y: hidden;
   display: none;
@@ -44,7 +46,11 @@ header nav ul {
   display: flex;
   height: 100%;
 }
-.column-4 ,.column-5 ,.column-6 ,.column-7 ,.column-8 {
+.column-4,
+.column-5,
+.column-6,
+.column-7,
+.column-8 {
   padding: 20px;
 }
 .column-4 {
@@ -111,45 +117,82 @@ header nav ul {
   flex-wrap: wrap;
 }
 
-.details > p, .details > a  {
+.details > p,
+.details > a {
   line-height: 2;
   font-size: 20px;
 }
-
-#skills {
-  width: 80%;
-  height: 90vh;
-  margin: auto;
+.skill-row,
+.history-row {
   display: flex;
+  width: 90%;
+  margin: auto;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 #skills .rating i {
   width: 40%;
   margin: auto;
   font-size: 2.5rem;
   font-style: normal;
 }
-
+.skill-column-7 {
+  width: 70%;
+  padding-top: 3rem;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 #skills .rating p {
   font-size: 1.5rem;
+  color: #03cc83;
 }
 .highLight {
   color: #4298c3;
   text-shadow: blue;
 }
 
-.details > a  {
+.details > a {
   text-decoration: none;
   color: #ffffff;
   cursor: pointer;
 }
 
 .text-theme {
-  color: #03cc83; 
+  color: #03cc83;
 }
 
 .pointer {
   cursor: pointer;
+}
+
+.edu-column-5 {
+  width: 40%;
+  display: flex;
+  background-color: #03cc83;
+  flex-direction: column;
+  justify-content: centers;
+  align-items: center;
+}
+.edu-column-5 > h1 {
+  font-size: 3rem;
+  margin-top: ;
+  font-weight: 400;
+}
+.emp-column-7 {
+  width: 80%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.emp-column-7 .info {
+  margin: 1rem;
+}
+.emp-column-7 > h1 {
+  font-size: 3rem;
+  font-weight: 400;
 }

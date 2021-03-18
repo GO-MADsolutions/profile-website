@@ -54,6 +54,9 @@ function displaySection(section) {
       pageElement.style.display = "block";
       setTimeout(() => {
         pageElement.style[selectedPagePosition[0].position] = "0";
+        if (section === "skills") {
+          addStars();
+        }
       }, 1);
     } else {
       const pageElement = document.getElementById(pages.children[i].id);
@@ -115,7 +118,7 @@ const skills = [
 ];
 
 var ele = document.getElementById("skills");
-(function () {
+function addStars() {
   const leftSkillElement = document.querySelector(".left-skills");
   const rightSkillElement = document.querySelector(".right-skills");
   for (let i = 0; i < skills.length / 2; i++) {
@@ -156,7 +159,24 @@ var ele = document.getElementById("skills");
 
     rightSkillElement.appendChild(divElement);
   }
-})();
+
+  const ratingSection = document.querySelectorAll(".rating");
+  for (let i = 0; i < skills.length; i++) {
+    addStarColor(skills[i].stars, ratingSection[i]);
+  }
+}
+
+function addStarColor(rating, element) {
+  const span = element.children;
+  for (let i = 0; i <= rating; i++) {
+    setTimeout(() => {
+      const star = span[i].children;
+      const ele = document.getElementById(star[0].id);
+      ele.classList.add("highLight");
+    }, 250 * i);
+  }
+}
+
 /*
 window.onscroll = function () {
   if (window.innerHeight > ele.getBoundingClientRect().top && !isHighlighted) {
