@@ -6,7 +6,7 @@
 body {
   background-color: #000000;
   color: #ffffff;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 header {
   width: 95%;
@@ -24,8 +24,10 @@ header nav ul {
   list-style: none;
   cursor: pointer;
   opacity: 0.8;
+  font-weight: 200;
 }
-#home, #about {
+#home,
+#about {
   height: 90vh;
   overflow-y: hidden;
   display: none;
@@ -64,6 +66,7 @@ header nav ul {
 .profile > p {
   font-size: 3rem;
   padding: 50px;
+  font-weight: 200;
 }
 
 .profile > h1 {
@@ -77,4 +80,27 @@ header nav ul {
   width: 100%;
   display: flex;
   margin-left: 6rem;
+}
+#skills {
+  width: 80%;
+  height: 90vh;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#skills .rating i {
+  width: 40%;
+  margin: auto;
+  font-size: 2.5rem;
+  font-style: normal;
+}
+
+#skills .rating p {
+  font-size: 1.5rem;
+}
+.highLight {
+  color: #4298c3;
+  text-shadow: blue;
 }

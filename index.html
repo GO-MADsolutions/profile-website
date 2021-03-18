@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
@@ -11,12 +16,27 @@
     <header>
       <nav>
         <ul>
-          <li onclick="displaySection('home')" data-link-selected="home">Home</li>
-          <li onclick="displaySection('about')" data-link-selected="about">About</li>
-          <li onclick="displaySection('skills')" data-link-selected="skills">Skills</li>
-          <li onclick="displaySection('history')" data-link-selected="history">History</li>
-          <li onclick="displaySection('projects')" data-link-selected="projects">Projects</li>
-          <li onclick="displaySection('contact')" data-link-selected="contact">Contact</li>
+          <li onclick="displaySection('home')" data-link-selected="home">
+            Home
+          </li>
+          <li onclick="displaySection('about')" data-link-selected="about">
+            About
+          </li>
+          <li onclick="displaySection('skills')" data-link-selected="skills">
+            Skills
+          </li>
+          <li onclick="displaySection('history')" data-link-selected="history">
+            History
+          </li>
+          <li
+            onclick="displaySection('projects')"
+            data-link-selected="projects"
+          >
+            Projects
+          </li>
+          <li onclick="displaySection('contact')" data-link-selected="contact">
+            Contact
+          </li>
           <div class="logo"><h1>LOGO</h1></div>
         </ul>
       </nav>
@@ -52,6 +72,17 @@
               <p>Full Stack Developer</p>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="skills" class="skill-row">
+        <div class="skill-column-4">
+          <div class="skill-svg">
+            <img src="./assets/skills.svg" alt="" />
+          </div>
+        </div>
+        <div class="skill-column-8">
+          <div class="column left-skills"></div>
+          <div class="column right-skills"></div>
         </div>
       </section>
     </main>
