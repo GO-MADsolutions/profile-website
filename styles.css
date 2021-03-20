@@ -26,10 +26,15 @@ header nav ul {
   opacity: 0.8;
   font-weight: 200;
 }
+.logo > img {
+  width: 5rem;
+}
 #home,
 #about,
 #skills,
-#history {
+#history,
+#projects,
+#contact {
   height: 90vh;
   overflow-y: hidden;
   display: none;
@@ -149,10 +154,10 @@ header nav ul {
 }
 #skills .rating p {
   font-size: 1.5rem;
-  color: #03cc83;
+  color: white;
 }
 .highLight {
-  color: #4298c3;
+  color: #03cc83;
   text-shadow: blue;
 }
 
@@ -171,21 +176,28 @@ header nav ul {
 }
 
 .edu-column-5 {
-  width: 40%;
+  width: 50%;
+  height: 45vh;
   display: flex;
-  background-color: #03cc83;
   flex-direction: column;
   justify-content: centers;
   align-items: center;
 }
 .edu-column-5 > h1 {
-  font-size: 3rem;
-  margin-top: ;
+  color: #03cc83;
+  font-size: 3.5rem;
+  margin-top: -18%;
   font-weight: 400;
 }
+.edu-column-5 > p {
+  font-size: 1.2rem;
+  line-height: 55px;
+  margin-top: 2%;
+}
 .emp-column-7 {
-  width: 80%;
-  margin-top: 10%;
+  width: 100%;
+  margin-left: 12%;
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
 }
@@ -193,6 +205,148 @@ header nav ul {
   margin: 1rem;
 }
 .emp-column-7 > h1 {
-  font-size: 3rem;
+  color: #03cc83;
+  font-size: 3.5rem;
   font-weight: 400;
+}
+.info .time {
+  font-size: 25px;
+}
+.carousel-container {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.carousel-container > h1 {
+  font-size: 3.5em;
+  color: #03cc83;
+  font-weight: 400;
+}
+/*
+span {
+  position: absolute;
+  top: 50%;
+  font-size: 5rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  left: 3%;
+  z-index: 2;
+}
+
+span:nth-of-type(2) {
+  left: 95%;
+  text-align: right;
+}
+*/
+.carousel {
+  width: 75%;
+  height: 320px;
+  margin: 10px autho;
+  display: flex;
+  justify-content: left;
+  overflow-x: auto;
+}
+.carousel::-webkit-scrollbar {
+  visibility: hidden;
+}
+.carousel > div {
+  min-width: 400px;
+  height: 300px;
+  position: relative;
+  left: 0;
+  padding-top: 10px;
+}
+.carousel > div > img {
+  min-width: 330px;
+  height: 200px;
+}
+.contact-row {
+  width: 90%;
+  height: 90vh;
+  margin: auto;
+  display: flex;
+}
+.img-container {
+  width: 90%;
+  height: 80%;
+}
+.contact-svg > img {
+  width: 80%;
+  margin-top: 20%;
+}
+.contact-page {
+  width: 90%;
+  height: 100%;
+}
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  margin-left: -10%;
+  margin-top: 10%;
+}
+
+.socialLinks > .links > img {
+  width: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 200ms ease-in-out;
+}
+.socialLinks > .links > img:hover {
+  transform: scale(1.2);
+}
+.forms {
+  margin-top: 15%;
+  margin-left: 10%;
+}
+.forms > h1 {
+  text-align: center;
+  color: #03cc83;
+}
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 4px #34495e;
+}
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn {
+  float: right;
+  border: 0;
+  background-color: #03cc83;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover {
+  background: #2980b9;
 }
