@@ -46,6 +46,26 @@ header nav ul {
   margin: auto;
   padding: 0 25%;
 }
+#downloadResume {
+  border: 2px solid #03cc83;
+  padding: 5px 30px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  transform: scale(1);
+  transition: all 200ms ease-out;
+}
+#downloadResume:hover,
+#downloadResume > img:hover {
+  transform: scale(1.1);
+  background-color: #03cc83;
+  color: black;
+}
+#downloadResume > img {
+  width: 15px;
+  transform: scale(1);
+  margin-right: 10px;
+}
 
 .row {
   display: flex;
@@ -180,7 +200,7 @@ header nav ul {
   height: 45vh;
   display: flex;
   flex-direction: column;
-  justify-content: centers;
+  justify-content: center;
   align-items: center;
 }
 .edu-column-5 > h1 {
@@ -330,9 +350,7 @@ span:nth-of-type(2) {
   color: #ddd;
   transition: 0.5s;
 }
-.contact-form-text:focus {
-  box-shadow: 0 0 10px 4px #34495e;
-}
+
 textarea.contact-form-text {
   resize: none;
   height: 120px;
@@ -348,5 +366,5 @@ textarea.contact-form-text {
   transition: 0.5s;
 }
 .contact-form-btn:hover {
-  background: #2980b9;
+  background: #29b99a;
 }
